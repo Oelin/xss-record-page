@@ -5,7 +5,7 @@ async function record(seconds, fps=10, el=document.body) {
   let sleep = ms => new Promise(r => setTimeout(r, ms))
   
   script.src = 'https://html2canvas.hertzen.com/dist/html2canvas.min.js'
-  body.appendChild(script)  
+  document.body.appendChild(script)  
   await sleep(1000)
   
   let end = Date.now() + seconds * 1000
